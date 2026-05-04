@@ -28,10 +28,133 @@
   }
 }
 
+@layer utilities {
+  .min-hit-area {
+    min-width: 48px;
+    min-height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .mobile-card {
+    width: 100%;
+    padding: 1rem;
+  }
+}
+
 .blur-md {
   filter: blur(12px);
 }
 
 .blur-xl {
   filter: blur(24px);
+}
+
+@media (max-width: 375px) {
+  html {
+    font-size: 14px;
+  }
+  
+  h1 {
+    font-size: 1.714rem !important;
+  }
+  
+  h2 {
+    font-size: 1.428rem !important;
+  }
+  
+  h3 {
+    font-size: 1.285rem !important;
+  }
+  
+  h4 {
+    font-size: 1.142rem !important;
+  }
+  
+  body, p, span, li {
+    font-size: 1rem !important;
+  }
+  
+  .px-6 {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+  
+  .px-8 {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+  
+  .px-10 {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+  
+  .px-12 {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+  
+  .py-8 {
+    padding-top: 1rem !important;
+    padding-bottom: 1rem !important;
+  }
+  
+  .py-12 {
+    padding-top: 1rem !important;
+    padding-bottom: 1rem !important;
+  }
+  
+  .gap-6 {
+    gap: 1rem !important;
+  }
+  
+  .gap-8 {
+    gap: 1rem !important;
+  }
+  
+  .gap-12 {
+    gap: 1rem !important;
+  }
+  
+  .max-w-6xl {
+    max-width: 100% !important;
+  }
+  
+  .max-w-3xl {
+    max-width: 100% !important;
+  }
+  
+  .max-w-2xl {
+    max-width: 100% !important;
+  }
+  
+  .max-w-lg {
+    max-width: 100% !important;
+  }
+  
+  .w-full-mobile {
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 640px) {
+  .btn-min-hit {
+    min-width: 48px;
+    min-height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .card-mobile-full {
+    width: 100%;
+    padding: 1rem;
+  }
+  
+  .img-mobile-responsive {
+    width: 100%;
+    height: auto;
+  }
 }
